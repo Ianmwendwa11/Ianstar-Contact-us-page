@@ -16,16 +16,19 @@ body {
   .contact-info, .contact-form {
     flex: 1;
     min-width: 300px;
+    animation: fadeInLeft 1s ease forwards;
   }
   
   .contact-info h2 {
     color: #003298;
     font-size: 24px;
+    animation-delay: 0.3s;
   }
   
   .contact-info p, .contact-form p {
     line-height: 1.6;
     margin-bottom: 20px;
+    animation-delay: 0.5s;
   }
   
   .info-block h3 {
@@ -54,8 +57,14 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
+  form input:focus, form textarea:focus {
+    border-color: #ce1b28;
+    box-shadow: 0 0 10px rgba(206, 27, 40, 0.3);
+  }
+
   .input-row {
     display: flex;
     gap: 15px;
@@ -64,6 +73,39 @@ body {
   .input-row input {
     flex: 1;
   }
+
+  .contact-form form input, .contact-form form textarea {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .contact-form form input:nth-child(1),
+  .contact-form form textarea:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .contact-form form input:nth-child(2),
+  .contact-form form textarea:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .contact-form form input:nth-child(3),
+  .contact-form form textarea:nth-child(3) {
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
   
   button {
     background: #ce1b28;
@@ -74,10 +116,28 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s ease;
+    transition: 0.3s ease, transform 0.3s ease;
+
   }
   
   button:hover {
     background: #ce1b28;
-    
+    transform: scale(1.05);
+
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
