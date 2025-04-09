@@ -141,3 +141,23 @@ body {
       transform: translateX(0);
     }
   }
+
+div label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #ce1b28;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
