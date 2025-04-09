@@ -28,9 +28,10 @@ body {
     margin-bottom: 20px;
   }
   
-  .info-block h4 {
+  .info-block h3 {
     color: #003298;
     margin-top: 20px;
+    font-size: 22px;
   }
   .info-block strong {
     color: #ce1b28;
@@ -77,5 +78,6 @@ body {
   
   button:hover {
     background: #ce1b28;
+    
   }
   
