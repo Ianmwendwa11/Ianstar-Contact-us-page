@@ -173,3 +173,12 @@ div label{
     align-items: center;
     justify-content: center;
   }
+
+
+  .contact-icon i {
+    transition: transform 0.3s ease;
+  }
+  
+  .header1:hover .contact-icon i {
+    transform: scale(1.2) rotate(5deg);
+  }
