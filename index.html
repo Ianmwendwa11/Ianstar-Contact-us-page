@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Section</title>
   <link rel="stylesheet" href="css/contact.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -30,12 +32,14 @@
 
       <div class="info-block">
         <h3>Our Location</h3>
-        <p>CMS-Africa House,  puSNDBX, Ground floor,<br>
+        <p>CMS-Africa House,  SNDBX, Ground floor,<br>
           P. O. BOX 1362-00100 GPO,<br>
           Chania Avenue, Kilimani,<br>
           Nairobi, Kenya.</p>
       </div>
     </div>
+    <div data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
 
     <div class="contact-form">
       <h3>Need Help?</h3>
@@ -50,6 +54,11 @@
         <button type="submit">Send Message →</button>
       </form>
     </div>
+    </div>
   </div>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
