@@ -179,6 +179,6 @@ div label{
     transition: transform 0.3s ease;
   }
   
-  .header1:hover .contact-icon i {
+  .contact-icon:hover i {
     transform: scale(1.2) rotate(5deg);
   }
